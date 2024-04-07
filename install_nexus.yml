@@ -1,5 +1,7 @@
 ---
 - hosts: gitlab
   become: yes
+  environment:
+    GIT_SSH_COMMAND: 'ssh -o StrictHostKeyChecking=no'
   roles:
   - install_nexus
