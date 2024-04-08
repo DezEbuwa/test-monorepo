@@ -1,5 +1,5 @@
 ---
-- hosts: gitlab
+- hosts: rhel_targets
   become: yes
   environment:
     GIT_SSH_COMMAND: 'ssh -o StrictHostKeyChecking=no'
